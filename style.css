@@ -1,0 +1,232 @@
+:root {
+    --bg: #0f0f10;
+    --card: #131315;
+    --text: #e8e8e8;
+    --muted: #bfbfbf;
+    --accent: #6ee7b7;
+    --danger: #ff6b6b;
+    --glass: rgba(255, 255, 255, 0.03);
+    --radius: 14px;
+    --shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+    --transition: 300ms cubic-bezier(.2, .9, .3, 1);
+}
+
+.theme-light {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #111217;
+    --muted: #4b5563;
+    --accent: #0ea5a0;
+    --glass: rgba(2, 6, 23, 0.02);
+    --shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: linear-gradient(180deg, var(--bg), rgba(0, 0, 0, 0.02));
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 28px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent), var(--card);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    position: relative;
+}
+
+.panel {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+}
+
+.brand {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.logo {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: #061017;
+    font-size: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+    transition: var(--transition);
+}
+
+.brand h1 {
+    font-size: 20px;
+    margin: 0
+}
+
+.lead {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.5
+}
+
+.form-wrap {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-self: center;
+}
+
+/* Inputs */
+.input {
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: var(--text);
+    outline: none;
+    transition: box-shadow var(--transition), transform var(--transition);
+    font-size: 15px;
+}
+
+.input:focus {
+    box-shadow: 0 6px 22px rgba(14, 165, 160, 0.08);
+    transform: translateY(-3px);
+    border-color: rgba(110, 231, 183, 0.12);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition);
+    background: linear-gradient(90deg, var(--accent), #8b5cf6);
+    color: #041014;
+    box-shadow: 0 8px 30px rgba(14, 165, 160, 0.08);
+}
+
+.btn:active {
+    transform: translateY(1px)
+}
+
+.btn.ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: none
+}
+
+/* Links & small text */
+.small {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px
+}
+
+/* Alerts */
+.alert {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px
+}
+
+.alert.error {
+    background: linear-gradient(180deg, rgba(255, 107, 107, 0.08), transparent);
+    color: var(--danger)
+}
+
+.alert.success {
+    background: linear-gradient(180deg, rgba(110, 231, 183, 0.06), transparent);
+    color: var(--accent)
+}
+
+/* Footer & theme toggle */
+.controls {
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+/* Responsive */
+@media (max-width:880px) {
+    .auth-card {
+        grid-template-columns: 1fr;
+        padding: 20px
+    }
+
+    .panel {
+        order: 2
+    }
+
+    .form-wrap {
+        order: 1
+    }
+}
+
+/* Simple entrance animations */
+.fade-in {
+    animation: fadeInUp 600ms var(--transition) both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
