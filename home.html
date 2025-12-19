@@ -26,33 +26,29 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-  <link rel="shortcut icon" href="imgs/01- LOGO.jpg" type="image/x-icon">
-
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Inter", sans-serif;
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #7b2cff, #ff4ecd);
+      position: relative;
+      overflow-x: hidden;
     }
 
-    body {
-      background: #f5f5f8;
-      min-height: 100vh;
-      justify-content: center;
-      align-items: flex-start;
-      padding-top: 100px;
+    body::before {
+      content: "";
+      position: absolute;
+      background: linear-gradient(135deg, #7b2cff, #ff4ecd);
+
+      inset: 0;
+      z-index: -1;
     }
   </style>
 </head>
 
 <body>
   <div class="header-fixed">
-    <div class="mode-toggle">
-      <i class="fa-solid fa-moon" id="modeIcon"></i>
-    </div>
-
     <button id="logout-btn" class="logout-btn">
       Logout <i class="fa-solid fa-right-from-bracket"></i>
     </button>
@@ -69,7 +65,9 @@
 
   </div>
 
-  <div id="cardsContainer"></div>
+  <div id="cardsContainer">
+    <input type="file" id="editFileInput" style="display: none;">
+  </div>
 
   <script type="module" src="config.js"></script>
   <script type="module" src="script.js"></script>

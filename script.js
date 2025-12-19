@@ -60,8 +60,8 @@ async function signUp(e) {
       text: "Please fill all fields before signup.",
       icon: "warning",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "OK",
       padding: "20px",
       borderRadius: "15px",
@@ -79,8 +79,8 @@ async function signUp(e) {
       text: "Phone number must be exactly 11 digits.",
       icon: "warning",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "Try Again",
       customClass: {
         popup: "glass-alert"
@@ -113,8 +113,8 @@ async function signUp(e) {
         icon: "error",
         draggable: true,
         background: "#f9fbfc",
-        color: "#45a049",
-        confirmButtonColor: "#45a049",
+        color: "rgb(132, 0, 255)",
+        confirmButtonColor: "rgb(132, 0, 255)",
         confirmButtonText: "OK",
         padding: "20px",
         borderRadius: "15px",
@@ -145,8 +145,8 @@ async function signUp(e) {
         title: "Database Error!",
         text: dbError.message,
         icon: "error",
-        color: "#45a049",
-        confirmButtonColor: "#45a049",
+        color: "rgb(132, 0, 255)",
+        confirmButtonColor: "rgb(132, 0, 255)",
         confirmButtonText: "OK",
         padding: "20px",
         borderRadius: "15px",
@@ -159,8 +159,8 @@ async function signUp(e) {
         icon: "success",
         draggable: true,
         background: "#f9fbfc",
-        color: "#45a049",
-        confirmButtonColor: "#45a049",
+        color: "rgb(132, 0, 255)",
+        confirmButtonColor: "rgb(132, 0, 255)",
         confirmButtonText: "Go to Home",
         padding: "20px",
         borderRadius: "15px",
@@ -180,8 +180,8 @@ async function signUp(e) {
       html: `Something went wrong internally! <br></br> <b>${err.message || "Unknown error"}</b>`,
       icon: "error",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "Report issue",
       padding: "20px",
       borderRadius: "15px",
@@ -236,8 +236,8 @@ async function login(e) {
       title: "Please enter your email address.",
       icon: "warning",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "OK",
       padding: "20px",
       borderRadius: "15px",
@@ -253,8 +253,8 @@ async function login(e) {
       text: "Example: yourname@gmail.com",
       icon: "warning",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "OK",
       padding: "20px",
       borderRadius: "15px",
@@ -273,8 +273,8 @@ async function login(e) {
       text: "Please enter your password.",
       icon: "warning",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "OK",
       padding: "20px",
       borderRadius: "15px",
@@ -290,8 +290,8 @@ async function login(e) {
       text: "Password must be at least 6 characters long.",
       icon: "warning",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "OK",
       padding: "20px",
       borderRadius: "15px",
@@ -308,8 +308,8 @@ async function login(e) {
       title: "Admin logged in Successfully!",
       icon: "success",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "Go to Admin portal..",
       padding: "20px",
       borderRadius: "15px",
@@ -335,8 +335,8 @@ async function login(e) {
           text: "Incorrect Email or Password. Please try again.",
           icon: "error",
           background: "#f9fbfc",
-          color: "#45a049",
-          confirmButtonColor: "#45a049",
+          color: "rgb(132, 0, 255)",
+          confirmButtonColor: "rgb(132, 0, 255)",
           confirmButtonText: "Try Again!",
           padding: "20px",
           customClass: {
@@ -353,8 +353,8 @@ async function login(e) {
           text: error.message,
           icon: "error",
           background: "#f9fbfc",
-          color: "#45a049",
-          confirmButtonColor: "#45a049",
+          color: "rgb(132, 0, 255)",
+          confirmButtonColor: "rgb(132, 0, 255)",
           confirmButtonText: "Try Again!",
           padding: "20px",
           customClass: {
@@ -371,8 +371,8 @@ async function login(e) {
       title: "Successfully logged in!",
       icon: "success",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "Go to Home",
       padding: "20px",
       customClass: {
@@ -389,8 +389,8 @@ async function login(e) {
       html: `Something went wrong internally!<br></br> <b> ${(err.message) || "Unknown error"}</b>`,
       icon: "error",
       background: "#f9fbfc",
-      color: "#45a049",
-      confirmButtonColor: "#45a049",
+      color: "rgb(132, 0, 255)",
+      confirmButtonColor: "rgb(132, 0, 255)",
       confirmButtonText: "Report issue",
       padding: "20px",
       borderRadius: "15px",
@@ -439,8 +439,8 @@ async function logout() {
         title: "Successfully logged out!",
         icon: "success",
         background: "#f9fbfc",
-        color: "#45a049",
-        confirmButtonColor: "#45a049",
+        color: "rgb(132, 0, 255)",
+        confirmButtonColor: "rgb(132, 0, 255)",
         confirmButtonText: "Go to Login page",
         padding: "20px",
       }).then(() => {
@@ -474,143 +474,167 @@ logoutBtn && logoutBtn.addEventListener("click", logout)
 
 
 
-/* =============================================     MOOD TOGGLE FUNCTIONALITY     ============================================= */
-
-const modeBtn = document.querySelector(".mode-toggle");
-const modeIcon = document.getElementById("modeIcon");
-
-modeBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-
-  if (document.body.classList.contains("dark-mode")) {
-    modeIcon.classList.remove("fa-moon");
-    modeIcon.classList.add("fa-sun");
-  } else {
-    modeIcon.classList.remove("fa-sun");
-    modeIcon.classList.add("fa-moon");
-  }
-});
 
 
 
+/* =============================================     HOME FUNCTIONALITY     ============================================= */
 
+const fileInput = document.getElementById("fileUpload");
+const uploadBtn = document.querySelector(".upload-btn");
+const gallery = document.getElementById('cardsContainer');
 
+  //    A:   UPLOAD FILE
 
+async function UploadFile() {
+    const file = fileInput.files[0];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =============================================      HOME PAGE FUNCTIONALITY      ============================================= */
-
-let UploadFile = document.getElementById("fileUpload");
-let UploadBtn = document.querySelector(".upload-btn");
-let imgContainer = document.getElementById("imgPreview");
-let cards = document.getElementById('cardsContainer');
-
-let filePath;
-let imgUrl;
-let upImgUrl;
-
-
-async function uploadF(event) {
-  console.log("BUTTON IS CLICKED!!");
-
-  Swal.fire({
-    title: 'Uploading...',
-    text: 'Processing your File and saving to th e database.',
-    icon: 'info',
-    showConfirmButton: false,
-    allowOutsideClick: false,
-  });
-
-  try {
-    if (!UploadFile.files || UploadFile.files.length === 0) {
-      throw new Error("No file selected.");
+    if (!file) {
+        return Swal.fire("Required", "Please select a file first.", "warning");
     }
 
-    const file = UploadFile.files[0];
-    const fileName = file.name;
-    const filePath = `${Date.now()}-${fileName.replace(/\s/g, '_')}`;
-
-    const { error: uploadError } = await supabase.storage
-      .from("Images")
-      .upload(filePath, file);
-
-    if (uploadError) {
-      throw new Error(`Storage Upload Failed: ${uploadError.message}`);
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+        return Swal.fire("Access Denied", "Please Login to upload File.", "error"); 
+        location.href = "login.html";
     }
 
-    const { data: myData } = supabase.storage
-      .from("Images")
-      .getPublicUrl(filePath);
-
-    if (!myData || !myData.publicUrl) {
-      throw new Error("Failed to retrieve public URL after upload.");
-    }
-
-    const imgUrl = myData.publicUrl;
-
-    const { error: dbError } = await supabase
-      .from("userImages")
-      .insert({
-        image_url: imgUrl,
-        image_name: fileName
-      });
-
-    if (dbError) {
-      throw new Error(`Database Error: ${dbError.message}. Did you set RLS?`);
-    }
-
-    Swal.close();
     Swal.fire({
-      title: "Upload Successful!",
-      text: "Image uploaded and saved.",
-      icon: "success",
-      confirmButtonText: "OK",
-    })
-
-  } catch (err) {
-    Swal.close();
-    console.error("Upload Process Error:", err);
-    Swal.fire({
-      title: "Upload Failed!",
-      html: `An error occurred: <b>${err.message || "Unknown error"}</b>`,
-      icon: "error",
-      confirmButtonText: "Try Again",
+        title: 'Uploading...',
+        text: 'Saving your File to the gallery.',
+        allowOutsideClick: false,
+        didOpen: () => Swal.showLoading()
     });
-  }
+
+    const fileName = `${Date.now()}_${file.name}`;
+    const { data: uploadData, error: uploadErr } = await supabase.storage
+        .from("Images")
+        .upload(fileName, file);
+
+    if (uploadData) {
+
+        const { data: pubData } = supabase.storage.from("Images").getPublicUrl(fileName);
+        const finalUrl = pubData.publicUrl;
+
+        const { error: dbErr } = await supabase.from("userImages").insert({
+            image_url: finalUrl,
+            image_name: file.name,
+            user_id: user.id
+        });
+
+        if (dbErr) {
+            Swal.fire("Database Error", dbErr.message, "error");
+        } else {
+            Swal.fire("Success!", "File has been added to your gallery.", "success");
+            fileInput.value = "";
+            fetchGallery();
+        }
+    } else {
+        Swal.fire("Upload Failed", uploadErr.message, "error");
+    }
 }
 
-UploadBtn && UploadBtn.addEventListener("click", uploadF);
 
-// ------------------------    SHOW IMAGE FROM DATABASE    ------------------------
+  // B: FETCH FILE
 
-// async function showImage() {
-//   cards.innerHTML = "";
+async function fetchGallery() {
+    gallery.innerHTML = "";
+    
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return;
 
-//   const { data, error } = await supabase
-//     .from('userImages')
-//     .select('*')
+    const { data, error } = await supabase
+        .from('userImages')
+        .select('*')
+        .eq('user_id', user.id); 
 
-//   if (data) {
-//     data.forEach(cards => {
-//       console.log(cards);
+    if (data && data.length > 0) {
+        data.forEach(item => {
+            gallery.innerHTML += `
+            <div class="img-card" style="display:inline-block; margin:10px; border:1px solid #ddd; padding:10px; border-radius:8px; background:#fff;">
+                <img src="${item.image_url}" alt="${item.image_url}" width="200" style="border-radius:4px; display:block;">
+                <div style="margin-top:10px; text-align:center;">
+                    <button class="btn btn-info btn-sm" onclick="startEdit(${item.id}, '${item.image_url}')">Edit</button>
+                    <button class="btn btn-danger btn-sm" onclick="deleteImage(${item.id}, '${item.image_url}')">Delete</button>
+                </div>
+            </div>`;
+        });
+    } else {
+        gallery.innerHTML = "<p>No File found in your gallery.</p>";
+    }
+}
 
-//       cards.innerHTML += `< div class="img-preview" id = "imgPreview" > <img id="previewImg" src="${cards.image}" alt="Preview Image"><div class="actions"><button class="edit-btn onClick='startEdt(${cards.id},"${cards.image}")">Edit</button><button class="delete-btn">Delete</button></div></>`
-//     });
-//   }
-// }
+if (uploadBtn) {
+    uploadBtn.addEventListener("click", UploadFile);
+}
 
-// showImage()
+window.onload = fetchGallery;
+
+
+  // C: EDIT & DELETE FILE
+
+const editFileInput = document.getElementById('editFileInput');
+let currentEditId = null;
+let currentOldUrl = null;
+
+window.deleteImage = async (id, imageUrl) => {
+    const result = await Swal.fire({
+        title: 'Are you sure?',
+        text: "This action will permanently delete the image.",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Yes, delete it!'
+    });
+
+    if (result.isConfirmed) {
+        try {
+            const fileName = imageUrl.split('/').pop(); 
+            await supabase.storage.from('Images').remove([fileName]);
+
+            const { error } = await supabase.from('userImages').delete().eq('id', id);
+
+            if (error) throw error;
+
+            Swal.fire('Deleted!', 'The image has been removed successfully.', 'success');
+            fetchGallery();
+        } catch (err) {
+            Swal.fire('Error', 'Failed to delete image: ' + err.message, 'error');
+        }
+    }
+};
+
+window.startEdit = (id, url) => {
+    currentEditId = id;
+    currentOldUrl = url;
+    editFileInput.click();
+};
+editFileInput.addEventListener('change', async () => {
+    const newFile = editFileInput.files[0];
+    if (!newFile) return;
+
+    Swal.fire({ title: 'Updating...', didOpen: () => Swal.showLoading() });
+
+    try {
+        const fileName = `${Date.now()}_${newFile.name}`;
+        
+        const { data: upData, error: upErr } = await supabase.storage
+            .from('Images')
+            .upload(fileName, newFile);
+
+        if (upErr) throw upErr;
+
+        const { data: { publicUrl } } = supabase.storage.from('Images').getPublicUrl(fileName);
+
+        const { error: dbErr } = await supabase.from('userImages')
+            .update({ image_url: publicUrl, image_name: newFile.name })
+            .eq('id', currentEditId);
+
+        if (dbErr) throw dbErr;
+
+        Swal.fire('Updated!', 'Image has been replaced successfully.', 'success');
+        fetchGallery();
+    } catch (err) {
+        Swal.fire('Update Failed', err.message, 'error');
+    }
+});
