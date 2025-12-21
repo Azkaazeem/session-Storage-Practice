@@ -536,33 +536,6 @@ async function UploadFile() {
 
   // B: FETCH FILE
 
-// async function fetchGallery() {
-//     gallery.innerHTML = "";
-    
-//     const { data: { user } } = await supabase.auth.getUser();
-//     if (!user) return;
-
-//     const { data, error } = await supabase
-//         .from('userImages')
-//         .select('*')
-//         .eq('user_id', user.id); 
-
-//     if (data && data.length > 0) {
-//         data.forEach(item => {
-//             gallery.innerHTML += `
-//             <div class="img-card" style="display:inline-block; margin:10px; border:1px solid #ddd; padding:10px; border-radius:8px; background:#fff;">
-//                 <img src="${item.image_url}" alt="${item.image_url}" width="200" style="border-radius:4px; display:block;">
-//                 <div style="margin-top:10px; text-align:center;">
-//                     <button class="btn btn-info btn-sm" onclick="startEdit(${item.id}, '${item.image_url}')">Edit</button>
-//                     <button class="btn btn-danger btn-sm" onclick="deleteImage(${item.id}, '${item.image_url}')">Delete</button>
-//                 </div>
-//             </div>`;
-//         });
-//     } else {
-//         gallery.innerHTML = "<p>No File found in your gallery.</p>";
-//     }
-// }
-
 async function fetchGallery() {
     const gallery = document.getElementById('cardsContainer');
     
@@ -590,7 +563,7 @@ async function fetchGallery() {
             gallery.innerHTML += `
             <div class="img-card">
                 <img src="${item.image_url}" alt="${item.image_name || 'Gallery Image'}">
-                <div style="margin-top:10px; text-align:center;">
+                <div style="margin-top:10px;">
                     <button class="btn btn-info btn-sm" onclick="startEdit(${item.id}, '${item.image_url}')">Edit</button>
                     <button class="btn btn-danger btn-sm" onclick="deleteImage(${item.id}, '${item.image_url}')">Delete</button>
                 </div>
